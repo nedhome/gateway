@@ -252,7 +252,7 @@
                   userId: sessionStorage.getItem('userId')
                 },
                 type:"GET",
-                url: "http://172.16.70.191:8060/gateway/config/list",
+                url: "/gateway/config/list",
                 data:{
 				  'id': that.id,
                   'moduleName':that.moduleName,
@@ -296,7 +296,7 @@
                           userId: sessionStorage.getItem('userId'),
                         },
                         type:"POST",
-                        url: 'http://172.16.70.191:8060/gateway/config/update',
+                        url: '/gateway/config/update',
                         data:that.editForm,
                         dataType:"json",
                         success: function(response){
@@ -326,7 +326,7 @@
                           userId: sessionStorage.getItem('userId')
                         },
                         type:"POST",
-                        url:'http://172.16.70.191:8060/gateway/config/add',
+                        url:'/gateway/config/add',
                         data:that.addForm,
                         dataType:"json",
                         success: function(response){
@@ -357,7 +357,7 @@
                     userId: sessionStorage.getItem('userId')
                   },
                   type:"POST",
-                  url:'http://172.16.70.191:8060/gateway/config/delete',
+                  url:'/gateway/config/delete',
                   data:{
                   	id:row.id
                   },

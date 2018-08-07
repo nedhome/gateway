@@ -158,7 +158,7 @@
                   userId: sessionStorage.getItem('userId'),
                 },
                 type:"GET",
-                url:'http://172.16.70.191:8060/gateway/record/list',
+                url:'/gateway/record/list',
                 data:{
                   'type': that.type,
                   'status':that.status,
@@ -209,7 +209,7 @@
                   userId: sessionStorage.getItem('userId')
                 },
                 type:"POST",
-                url:"http://172.16.70.191:8060/gateway/record/update",
+                url:"/gateway/record/update",
                 data:{
                   'ids':that.ids,
                   'processed':that.processed1

@@ -6,7 +6,7 @@
 			</el-col>
             <el-dropdown-item class="breadcrumb-inner">{{$route.name}}</el-dropdown-item>
 			<el-col :span="4" class="userinfo">
-				<el-dropdown trigger="hover">
+				<el-dropdown>
 					<!--<span class="el-dropdown-link userinfo-inner"><img :src="this.userLogo" /> {{userName}}</span>-->
                     <span class="el-dropdown-link userinfo-inner">{{userName}}</span>
 					<el-dropdown-menu slot="dropdown">
@@ -210,5 +210,8 @@ aside {
 	background-color: #fff;
 	box-sizing: border-box;
 }
-
+.el-dropdown-menu__item:not(.is-disabled):hover{
+    background-color: #1f2d3d;
+    color: #fff;
+}
 </style>

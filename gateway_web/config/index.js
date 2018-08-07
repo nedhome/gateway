@@ -15,11 +15,19 @@ module.exports = {
   },
   dev: {
     env: require('./dev.env'),
-    port: 8081,
+    port: 8085,
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+          '/gateway/': {
+            // target: 'http://localhost:83/',
+        target: 'http://172.16.70.38:8080/',
+            pathRewrite: {
+              '^/gateway/': '/gateway/'
+            }
+          }
+    },
     cssSourceMap: false,
   }
 }

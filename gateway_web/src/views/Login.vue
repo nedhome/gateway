@@ -49,7 +49,7 @@
               type:"POST",
               async: true,
               crossDomain: true,
-              url: "http://172.16.70.191:8060/gateway/login/login",
+              url: "/gateway/login/login",
               dataType:"json",
               headers: {},
               data: that.loginForm,

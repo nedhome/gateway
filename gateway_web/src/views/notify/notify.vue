@@ -403,7 +403,7 @@
                   userId: sessionStorage.getItem('userId'),
                 },
                 type:"GET",
-                url:'http://172.16.70.191:8060/gateway/notify/list/module',
+                url:'/gateway/notify/list/module',
                 data:{
                   "id":row.id
                 },
@@ -443,7 +443,7 @@
 
                 },
                 type:"GET",
-                url:'http://172.16.70.191:8060/gateway/notify/list',
+                url:'/gateway/notify/list',
                 data:{
                   'id': that.id,
                   'moduleName':that.moduleName,
@@ -481,7 +481,7 @@
                   userId: sessionStorage.getItem('userId')
                 },
                 type:"GET",
-                url: "http://172.16.70.191:8060/gateway/config/list",
+                url: "/gateway/config/list",
                 data:{
                 'id': null,
                 'moduleName':null,
@@ -531,7 +531,7 @@
                       userId: sessionStorage.getItem('userId')
                     },
                     type:"POST",
-                    url:'http://172.16.70.191:8060/gateway/notify/add',
+                    url:'/gateway/notify/add',
                     data:that.addForm,
                     dataType:"json",
                     success: function(response){
@@ -562,7 +562,7 @@
                     userId: sessionStorage.getItem('userId')
                   },
                   type:"POST",
-                  url:'http://172.16.70.191:8060/gateway/notify/delete',
+                  url:'/gateway/notify/delete',
                   data:{
                     id:row.id
                   },
@@ -596,7 +596,7 @@
                           userId: sessionStorage.getItem('userId'),
                         },
                         type:"POST",
-                        url: 'http://172.16.70.191:8060/gateway/notify/update',
+                        url: '/gateway/notify/update',
                         data:that.editForm,
                         dataType:"json",
                         success: function(response){
